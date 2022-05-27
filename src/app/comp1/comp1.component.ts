@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DesignServiceService } from './design-service.service';
+import { DesignserviceService } from '../designservice.service';
 
 @Component({
   selector: 'app-comp1',
@@ -9,7 +9,7 @@ import { DesignServiceService } from './design-service.service';
 export class Comp1Component implements OnInit {
   username;
 
-  constructor(private _designsevices: DesignServiceService) {
+  constructor(private _designsevices: DesignserviceService) {
     this._designsevices.userName.subscribe((uname) => {
       this.username = uname;
     });
